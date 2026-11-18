@@ -1,0 +1,15 @@
+<h1>Ajouter une tâche</h1>
+
+<%= form_with model: @task do |form| %>
+  <div>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :details %>
+    <%= form.text_area :details %>
+  </div>
+
+  <%= form.submit "Ajouter la tâche" %>
+<% end %>
